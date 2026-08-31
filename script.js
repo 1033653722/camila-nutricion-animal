@@ -83,7 +83,11 @@ form.addEventListener("submit", e => {
     (d.notas.trim() ? "• Motivo: " + d.notas.trim() + "\n" : "") +
     "\nQuedo atento(a) a la confirmación.";
 
-  window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensaje), "_blank");
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensaje);
+
+  /* El botón queda siempre disponible por si el navegador bloquea la ventana */
+  document.getElementById("wa-link").href = url;
+  window.open(url, "_blank");
 
   success.hidden = false;
   success.scrollIntoView({ behavior: "smooth", block: "center" });

@@ -378,7 +378,9 @@ select {
   font-size: 14px;
   color: var(--accent-dk);
 }
+.form__success[hidden] { display: none; }
 .form__success span { color: var(--ink-soft); font-size: 13.5px; }
+.btn--wa { margin-top: 10px; justify-self: start; }
 
 /* ---------- Footer ---------- */
 .footer {
