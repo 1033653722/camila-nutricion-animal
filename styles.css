@@ -228,6 +228,7 @@ a { color: inherit; text-decoration: none; }
 .section__head h2 { font-size: clamp(28px, 3.4vw, 38px); }
 
 .grid { display: grid; gap: 22px; }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 
 .card {
@@ -433,7 +434,7 @@ select {
   .hero h1 { max-width: none; }
   .booking { grid-template-columns: 1fr; gap: 40px; }
   .booking__intro { position: static; }
-  .grid--3, .steps { grid-template-columns: 1fr; }
+  .grid--2, .grid--3, .steps { grid-template-columns: 1fr; }
   .steps { gap: 32px; }
   .section { padding: 68px 0; }
 }
