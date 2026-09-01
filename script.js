@@ -72,7 +72,7 @@ form.addEventListener("submit", e => {
   const d = Object.fromEntries(new FormData(form).entries());
 
   const mensaje =
-    "Hola, quiero agendar una consulta con Camila Nutrición Animal.\n\n" +
+    "Hola, quiero agendar una consulta con Ma. Camila Nutrición Animal.\n\n" +
     "• Nombre: " + d.nombre + "\n" +
     "• Teléfono: " + d.telefono + "\n" +
     "• Correo: " + d.email + "\n" +
